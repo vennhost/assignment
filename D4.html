@@ -200,18 +200,54 @@
     */
 ​
         /* WRITE YOUR CODE HERE */
+
+        function average(avNum) {
+                var sum = 0;
+
+        if (avNum == NaN); return 0;
+
+        for (var i = 0; i < avNum.length; i++) {
+                sum += avNum[i];
+        }
+        return sum/avNum.length;
+        }
+
 ​
         /* EXERCISE 18
     Write a function "longest" to find the longest string from an given array of strings.
     */
 ​
         /* WRITE YOUR CODE HERE */
+
+        function longest(word) {
+                var wordSplit = word.split(' ');
+                var longestWord = 0;
+                for (var i = 0; i < wordSplit.length, i++) {
+                        if (splitWord[i].length > longestWord) {
+                                longestWord = splitWord[i].length;
+                        }
+
+
+
+                }
+                return longestWord;
+        }
+        longest("Horridly horrible case of math");
+        
+
 ​
         /* EXERCISE 19
     Write a function that receives a date D as parameter and calculates the number of days passes since the D.
     */
 ​
         /* WRITE YOUR CODE HERE */
+
+        function newDate(D){
+
+        var firstDate = new Date();
+        var dateDiff = Math.round(Math.abs(firstDate - D))
+        return dateDiff;
+        }
 ​
         /* EXERCISE 20
     Write a function "matrixGenerator" that receives X and Y as parameter. The result should be a matrix of X times Y with, as value, the index of the position.
